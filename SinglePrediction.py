@@ -37,10 +37,10 @@ def show_single():
             st.subheader(f"{model_name} Prediction: {pred[0]} → {label}")
 
         if use_knn:
-            show_prediction("K-Nearest Neighbors", "modeljB_KNN.joblib")
+            show_prediction("K-Nearest Neighbors", "modelJb_KNN.joblib")
         if use_svm:
-            show_prediction("Support Vector Machine", "modeljB_SVM.joblib")
+            show_prediction("Support Vector Machine", "modelJb_SVM.joblib")
         if use_nn:
-            show_prediction("Neural Network", "modeljB_NN.joblib")
+            show_prediction("Neural Network", "modelJb_NN.joblib")
         if use_dt:
-            show_prediction("Decision Tree", "modeljB_DecisionTree.joblib")
+            show_prediction("Decision Tree", "modelJb_DecisionTree.joblib")

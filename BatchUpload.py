@@ -32,7 +32,7 @@ def show_batch():
             X.columns = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
 
             if use_knn:
-                model = joblib.load("modeljb_KNN.joblib")
+                model = joblib.load("modelJb_KNN.joblib")
                 preds = model.predict(X)
                 st.markdown("### K-Nearest Neighbors Predictions")
                 df_knn = df.copy()
@@ -41,7 +41,7 @@ def show_batch():
                 st.dataframe(df_knn[["KNN Class", "KNN Label"]])
 
             if use_svm:
-                model = joblib.load("modeljb_SVM.joblib")
+                model = joblib.load("modelJb_SVM.joblib")
                 preds = model.predict(X)
                 st.markdown("### Support Vector Machine Predictions")
                 df_svm = df.copy()
@@ -50,7 +50,7 @@ def show_batch():
                 st.dataframe(df_svm[["SVM Class", "SVM Label"]])
 
             if use_nn:
-                model = joblib.load("modeljb_NN.joblib")
+                model = joblib.load("modelJb_NN.joblib")
                 preds = model.predict(X)
                 st.markdown("### Neural Network Predictions")
                 df_nn = df.copy()
@@ -59,7 +59,7 @@ def show_batch():
                 st.dataframe(df_nn[["NN Class", "NN Label"]])
 
             if use_dt:
-                model = joblib.load("modeljb_DecisionTree.joblib")
+                model = joblib.load("modelJb_DecisionTree.joblib")
                 preds = model.predict(X)
                 st.markdown("### Decision Tree Predictions")
                 df_dt = df.copy()
